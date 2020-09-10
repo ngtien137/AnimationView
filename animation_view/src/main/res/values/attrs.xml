@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <attr name="animation_resource" format="reference" />-->
+    <!--    <attr name="animation_bind_to_life_cycle" format="boolean" />-->
+    <!--    <declare-styleable name="AnimationTextView">-->
+    <!--        <attr name="animation_resource" />-->
+    <!--        <attr name="animation_bind_to_life_cycle" />-->
+    <!--    </declare-styleable>-->
+
+    <!--    <declare-styleable name="AnimationImageView">-->
+    <!--        <attr name="animation_resource" />-->
+    <!--        <attr name="animation_bind_to_life_cycle" />-->
+    <!--    </declare-styleable>-->
+
+    <!--    <declare-styleable name="AnimationView">-->
+    <!--        <attr name="animation_resource" />-->
+    <!--        <attr name="animation_bind_to_life_cycle" />-->
+    <!--    </declare-styleable>-->
+    <declare-styleable name="AnimationAttrs">
+        <attr name="animation_resource" format="reference" />-->
+        <attr name="animation_bind_to_life_cycle" format="boolean" />
+    </declare-styleable>
+
+</resources>
