@@ -1,4 +1,7 @@
 # AnimationView
+## Features
+- Support configure animation from anim resources from xml and code
+- Bind to lifecycle (auto pause and resume depend on lifecycle)
 ## Getting Started
 ### Configure build.gradle (Project)
 * Add these lines:
