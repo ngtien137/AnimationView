@@ -116,6 +116,6 @@ public class AnimationView extends View implements LifecycleObserver {
 
     public void stopCurrentAnimation() {
         if (currentAnimation != null)
-            currentAnimation.cancel();
+            clearAnimation();
     }
 }

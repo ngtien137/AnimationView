@@ -115,6 +115,6 @@ public class AnimationTextView extends AppCompatTextView implements LifecycleObs
 
     public void stopCurrentAnimation() {
         if (currentAnimation != null)
-            currentAnimation.cancel();
+            clearAnimation();
     }
 }

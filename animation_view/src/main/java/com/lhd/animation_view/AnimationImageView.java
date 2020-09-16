@@ -116,6 +116,6 @@ public class AnimationImageView extends AppCompatImageView implements LifecycleO
 
     public void stopCurrentAnimation() {
         if (currentAnimation != null)
-            currentAnimation.cancel();
+            clearAnimation();
     }
 }
