@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/ngtien137/AnimationView.svg)](https://jitpack.io/#ngtien137/AnimationView)
 # AnimationView
 ## Features
 - Support configure animation from anim resources from xml and code
