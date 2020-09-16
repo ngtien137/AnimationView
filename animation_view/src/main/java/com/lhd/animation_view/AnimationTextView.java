@@ -91,6 +91,8 @@ public class AnimationTextView extends AppCompatTextView implements LifecycleObs
     }
 
     public void startAnimation(int resAnim, boolean isBindToLifecycle) {
+        if (resAnim == -1)
+            return;
         initAnimWithResource(resAnim);
         if (currentAnimation != null) {
             startAnimation(currentAnimation);
