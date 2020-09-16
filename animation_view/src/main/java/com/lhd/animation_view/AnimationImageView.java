@@ -23,6 +23,7 @@ public class AnimationImageView extends AppCompatImageView implements LifecycleO
     private Animation currentAnimation;
     private int currentAnimationResource = -1;
     private boolean isBoundToLifeCycle = false;
+    private boolean isStartWhenReady = true;
 
     public AnimationImageView(@NonNull Context context) {
         super(context);
@@ -48,6 +49,7 @@ public class AnimationImageView extends AppCompatImageView implements LifecycleO
                 initAnimWithResource(currentAnimationResource);
             }
             isBoundToLifeCycle = ta.getBoolean(R.styleable.AnimationAttrs_animation_bind_to_life_cycle, false);
+            isStartWhenReady = ta.getBoolean(R.styleable.AnimationAttrs_animation_start_when_ready, true);
             if (isBoundToLifeCycle) {
                 setBindToLifecycleOfContext();
             }
@@ -61,7 +63,8 @@ public class AnimationImageView extends AppCompatImageView implements LifecycleO
         post(new Runnable() {
             @Override
             public void run() {
-                startAnimation(currentAnimationResource, isBoundToLifeCycle);
+                if (isStartWhenReady)
+                    startAnimation(currentAnimationResource, isBoundToLifeCycle);
             }
         });
     }
@@ -83,7 +86,7 @@ public class AnimationImageView extends AppCompatImageView implements LifecycleO
         startCurrentAnimation();
     }
 
-    private void initAnimWithResource(int resAnim) {
+    public void initAnimWithResource(int resAnim) {
         currentAnimationResource = resAnim;
         currentAnimation = AnimationUtils.loadAnimation(getContext(), resAnim);
     }

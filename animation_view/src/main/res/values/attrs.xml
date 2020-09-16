@@ -19,6 +19,7 @@
     <declare-styleable name="AnimationAttrs">
         <attr name="animation_resource" format="reference" />-->
         <attr name="animation_bind_to_life_cycle" format="boolean" />
+        <attr name="animation_start_when_ready" format="boolean" />
     </declare-styleable>
 
 </resources>
